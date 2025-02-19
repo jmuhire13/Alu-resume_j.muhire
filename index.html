@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Jean Portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Jean <span>Muhire</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image">
+                <img src="photo.png.jpeg" alt="Jean's Photo">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hello I'm <span>Jean</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    I'm a <span class="typewriter-text"></span><label for="">|</label>
+                </div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">A passionate learner and aspiring software engineer...</p>
+                <div class="social-links">
+                    <a href="#" title="GitHub" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i> GitHub</a>
+                    <a href="#" title="Facebook" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="#" title="LinkedIn" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="#" title="Twitter" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Email me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-container" data-aos="fade-up" data-aos-duration="1500">
+            <h2>About Me</h2>
+            <p>
+                A passionate learner and aspiring software engineer. I completed my secondary education at IFAK Kimihurura and am currently studying Software Engineering at African Leadership University (ALU), where I've been deepening my knowledge and skills for the past 10 months.
+            </p>
+            <p>
+                During my journey, while waiting to begin university, I explored various fields—earning my driving license, gaining experience in visa application consulting, and most importantly, immersing myself in technology. Right now, I'm focused on web development, honing my skills in HTML, CSS, and JavaScript, while also exploring Python. Through building projects, I'm gaining hands-on experience and pushing myself to become a better developer every day.
+            </p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="skills-container" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Skills</h2>
+            <div class="skill-cards">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-brands fa-linux"></i>
+                    <h3>Linux</h3>
+                    <p>Proficient in Ubuntu, CentOS, and Bash scripting. Experienced in server management, automation, and system security.</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Skilled in Python programming for automation, data analysis, and backend development. Familiar with libraries like Pandas, NumPy, and Flask.</p>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Front-End Development</h3>
+                    <p>Experienced in HTML, CSS, JavaScript, and frameworks like React and Bootstrap. Able to build responsive and modern web applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="services-container" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Services</h2>
+            <div class="service-cards">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Front-End Web Development</h3>
+                    <p>I create responsive and user-friendly websites using HTML, CSS, and JavaScript. I also work with frameworks like React and Bootstrap to build modern web applications.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python Development</h3>
+                    <p>I develop Python scripts for automation, data analysis, and backend development. I also work with libraries like Pandas, NumPy, and Flask.</p>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-terminal"></i>
+                    <h3>Linux System Administration</h3>
+                    <p>I manage Linux servers, automate tasks using shell scripting, and ensure system security and performance. I'm proficient in Ubuntu, CentOS, and Bash scripting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container" data-aos="fade-up" data-aos-duration="1500">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

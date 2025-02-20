@@ -524,6 +524,18 @@ form button:hover {
     }
 }
 
+@media (width: 1280px) and (height: 800px) {
+    .main-container .image {
+        width: 25%; /* Adjust image width for Nest Hub */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add spacing between image and content */
+    }
+
+    .main-container .content {
+        width: 60%; /* Adjust content width for better readability */
+    }
+}
+
 footer {
     height: 8vh;
     margin: 0 1rem;

@@ -42,4 +42,19 @@ document.addEventListener('DOMContentLoaded', () => {
     type();
 });
 
+ // Function to open default email client
+ function sendEmail() {
+    window.location.href = "mailto:jeanmuhire@example.com";
+}
+
+// Function to toggle hamburger menu
+function hamburg() {
+    document.querySelector(".dropdown").style.transform = "translateY(0)";
+}
+
+// Function to close hamburger menu
+function cancel() {
+    document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+}
+
 

@@ -268,7 +268,7 @@ section {
 /* Skills Section Styles */
 #skills {
     width: 100%;
-    min-height: 80vh;
+    height: auto;
     padding: 50px 0;
     background-color: #111;
     text-align: center;
@@ -326,7 +326,7 @@ section {
 /* Services Section */
 #services {
     width: 100%;
-    min-height: 80vh;
+    height: auto;
     padding: 50px 0;
     background-color: #111;
     text-align: center;
@@ -473,8 +473,8 @@ form button:hover {
 
     .main-container .image {
         z-index: -1;
-        width: 50%;
-        height: 60%;
+        width: 40%;
+        height: 50%;
     }
 }
 
@@ -491,6 +491,138 @@ form button:hover {
     .main-container button {
         margin-top: 15px;
         font-size: clamp(1.2rem, 3vw, 1.5rem);
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Navigation Bar Adjustments */
+    nav .logo {
+        font-size: clamp(1.8rem, 4vw, 2.5rem); /* Slightly smaller logo */
+    }
+
+    .nav-container .links a {
+        font-size: clamp(1rem, 2vw, 1.5rem); /* Smaller navigation links */
+        margin: 0 15px; /* Reduce spacing between links */
+    }
+
+    /* Main Section Adjustments */
+    .main-container {
+        flex-direction: column; /* Stack image and content vertically */
+        text-align: center; /* Center-align content */
+    }
+
+    .main-container .image {
+        width: 60%; /* Smaller image for tablets */
+        height: 50%;
+        margin-bottom: 20px; /* Add spacing between image and content */
+    }
+
+    .main-container .content {
+        width: 80%; /* Wider content area for better readability */
+    }
+
+    .content h1 {
+        font-size: clamp(2.5rem, 6vw, 3.5rem); /* Adjust heading size */
+    }
+
+    .content .typewriter {
+        font-size: clamp(1.8rem, 5vw, 2.5rem); /* Adjust typewriter text size */
+    }
+
+    .content p {
+        font-size: clamp(1.2rem, 2.5vw, 1.8rem); /* Adjust paragraph size */
+    }
+
+    .social-links i {
+        width: clamp(2.5rem, 6vw, 3.5rem); /* Adjust social icon size */
+        height: clamp(2.5rem, 6vw, 3.5rem);
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+    }
+
+    .content button {
+        width: 60%; /* Wider button for easier tapping */
+        font-size: clamp(1.2rem, 3vw, 1.8rem); /* Adjust button text size */
+    }
+
+    /* About Section Adjustments */
+    .about-container {
+        width: 90%; /* Wider container for better readability */
+    }
+
+    .about-container h2 {
+        font-size: clamp(2rem, 5vw, 3rem); /* Adjust heading size */
+    }
+
+    .about-container p {
+        font-size: clamp(1rem, 2.5vw, 1.5rem); /* Adjust paragraph size */
+    }
+
+    /* Skills Section Adjustments */
+    .skills-container {
+        width: 90%; /* Wider container for better readability */
+    }
+
+    .skills-container h2 {
+        font-size: clamp(2rem, 5vw, 3rem); /* Adjust heading size */
+    }
+
+    .skill-cards {
+        gap: 15px; /* Reduce gap between cards */
+    }
+
+    .skill-card {
+        width: clamp(200px, 45%, 250px); /* Adjust card width */
+    }
+
+    .skill-card h3 {
+        font-size: clamp(1.2rem, 3vw, 1.5rem); /* Adjust heading size */
+    }
+
+    .skill-card p {
+        font-size: clamp(1rem, 2.5vw, 1.2rem); /* Adjust paragraph size */
+    }
+
+    /* Services Section Adjustments */
+    .services-container {
+        width: 90%; /* Wider container for better readability */
+    }
+
+    .services-container h2 {
+        font-size: clamp(2rem, 5vw, 3rem); /* Adjust heading size */
+    }
+
+    .service-cards {
+        gap: 15px; /* Reduce gap between cards */
+    }
+
+    .card {
+        width: clamp(200px, 45%, 250px); /* Adjust card width */
+    }
+
+    .card h3 {
+        font-size: clamp(1.2rem, 3vw, 1.5rem); /* Adjust heading size */
+    }
+
+    .card p {
+        font-size: clamp(1rem, 2.5vw, 1.2rem); /* Adjust paragraph size */
+    }
+
+    /* Contact Section Adjustments */
+    .contact-container {
+        width: 90%; /* Wider container for better readability */
+    }
+
+    .contact-container h2 {
+        font-size: clamp(2rem, 5vw, 3rem); /* Adjust heading size */
+    }
+
+    form input,
+    form textarea {
+        font-size: clamp(1rem, 2.5vw, 1.2rem); /* Adjust input text size */
+    }
+
+    form button {
+        font-size: clamp(1.2rem, 3vw, 1.5rem); /* Adjust button text size */
     }
 }
 

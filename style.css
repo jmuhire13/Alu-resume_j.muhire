@@ -134,7 +134,7 @@ section {
 
 .main-container .image {
     width: 20%; /* Responsive image size */
-    max-width: 600px;
+    max-width: 700px;
     height: auto;
     border-radius: 100%;
     overflow: hidden;
@@ -227,7 +227,7 @@ section {
     color: white;
     border: none;
     outline: none;
-    font-size: clamp(1.5rem, 3vw, 3rem); /* Responsive font size */
+    font-size: clamp(1.5rem, 3vw, 1.5rem); /* Responsive font size */
     font-weight: 700;
     border-radius: 5px;
     transition: 0.2s linear;

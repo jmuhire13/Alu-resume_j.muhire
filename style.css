@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@ body {
     color: white;
 }
 
-/* Navigation */
+/* Navigation Bar Styles */
 nav {
     width: 100%;
     height: 10vh;
@@ -114,7 +115,7 @@ nav {
     background-color: #077b32;
 }
 
-/* Main Section */
+/* Main Section Styles */
 section {
     width: 100%;
     height: 100vh;
@@ -132,19 +133,15 @@ section {
 }
 
 .main-container .image {
-    display: flex;
-    width: 1000px;
-    height: 80vh;
-    margin: auto 0;
-    box-shadow: 0 0 50px white;
-    border-radius: 50%;
+    width: clamp(300px, 50vw, 900px); /* Responsive image size */
+    height: clamp(300px, 50vh, 80vh);
+    border-radius: 100%;
     overflow: hidden;
+    box-shadow: 0 0 50px white;
 }
 
 .main-container .image img {
     width: 100%;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 .main-container .image:hover {
@@ -240,7 +237,7 @@ section {
     box-shadow: 0 0 40px #077b32;
 }
 
-/* About Section */
+/* About Section Styles */
 #about {
     width: 100%;
     min-height: 80vh;
@@ -268,7 +265,7 @@ section {
     text-align: justify;
 }
 
-/* Skills Section */
+/* Skills Section Styles */
 #skills {
     width: 100%;
     min-height: 80vh;
@@ -284,7 +281,7 @@ section {
 
 .skills-container h2 {
     font-size: clamp(2rem, 5vw, 4rem); /* Responsive font size */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #077b32;
     text-shadow: 0 0 10px #077b32;
 }
@@ -322,7 +319,8 @@ section {
 
 .skill-card p {
     font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
-    line-height: 1.6;
+    line-height: 1.8;
+    margin: 20px 0;
 }
 
 /* Services Section */
@@ -341,7 +339,7 @@ section {
 
 .services-container h2 {
     font-size: clamp(2rem, 5vw, 4rem); /* Responsive font size */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #077b32;
     text-shadow: 0 0 10px #077b32;
 }
@@ -379,7 +377,8 @@ section {
 
 .card p {
     font-size: clamp(1rem, 2vw, 1.5rem); /* Responsive font size */
-    line-height: 1.6;
+    line-height: 1.8;
+    margin: 20px 0;
 }
 
 /* Contact Section */
@@ -398,7 +397,7 @@ section {
 
 .contact-container h2 {
     font-size: clamp(2rem, 5vw, 4rem); /* Responsive font size */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: #077b32;
     text-shadow: 0 0 10px #077b32;
 }
@@ -493,6 +492,15 @@ form button:hover {
         margin-top: 15px;
         font-size: clamp(1.2rem, 3vw, 1.5rem);
     }
+}
+
+footer {
+    height: 8vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
 }
 
 

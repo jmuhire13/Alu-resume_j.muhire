@@ -1,13 +1,10 @@
-// Hamburger Menu Toggle
-function hamburg() {
-    const dropdown = document.querySelector('.dropdown');
-    dropdown.style.transform = 'translateY(0)';
+ // JavaScript for Hamburger Menu and Typewriter Effect
+ function hamburg() {
+    document.querySelector(".dropdown").style.transform = "translateY(0)";
 }
 
-// Close Dropdown Menu
 function cancel() {
-    const dropdown = document.querySelector('.dropdown');
-    dropdown.style.transform = 'translateY(-100%)';
+    document.querySelector(".dropdown").style.transform = "translateY(-500px)";
 }
 
 // Typewriter Effect
@@ -42,19 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
     type();
 });
 
- // Function to open default email client
- function sendEmail() {
+// Function to open default email client
+function sendEmail() {
     window.location.href = "mailto:jeanmuhire@example.com";
-}
-
-// Function to toggle hamburger menu
-function hamburg() {
-    document.querySelector(".dropdown").style.transform = "translateY(0)";
-}
-
-// Function to close hamburger menu
-function cancel() {
-    document.querySelector(".dropdown").style.transform = "translateY(-500px)";
 }
 
 

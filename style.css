@@ -133,16 +133,21 @@ section {
 }
 
 .main-container .image {
-    width: clamp(300px, 50vw, 900px); /* Responsive image size */
-    height: clamp(300px, 50vh, 80vh);
+    width: 20%; /* Responsive image size */
+    max-width: 600px;
+    height: auto;
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 50px white;
+    margin: 0 auto 20px;
 }
 
 .main-container .image img {
-    width: 100%;
+    width: 100%; /* Ensure the image fills its container */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit:scale-down; /* Prevent stretching or cropping */
 }
+    
 
 .main-container .image:hover {
     animation: animate 1.5s ease-in-out infinite;

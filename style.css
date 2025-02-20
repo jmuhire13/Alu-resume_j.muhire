@@ -36,7 +36,7 @@ nav {
 
 .logo {
     color: white;
-    font-size: clamp(2rem, 5vw, 8rem); /* Responsive font size */
+    font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
     font-weight: bold;
 }
 
